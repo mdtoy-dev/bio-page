@@ -10,7 +10,8 @@ header {
     background-color: #333333;
     color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0;
+    margin: auto;
 }
 
 header h1 {
@@ -24,28 +25,37 @@ h2 {
 
 .container {
     width: 1024px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 #main-bio {
     display: flex;
-    flex-wrap: wrap;
 }
 
 #contact-info {
-    width: 30;
+    text-align: center;
+    width: auto;
+}
+
+#contact-info ul {
+    width: auto;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #bio-image {
     width: 200px;
-    margin-right: 20px;
+    margin: 20px;
     flex: 1;
 }
 
 #bio-image img {
+    width: auto;
     max-width: 100%;
     height: auto;
-    display: block;
+    border-radius: 30%;
 }
 
 #bio-content {
@@ -54,7 +64,7 @@ h2 {
 }
 
 body, p {
-    line-height: 1.5;
+    line-height: 1.8;
     text-align: center;
 }
 
@@ -62,9 +72,28 @@ a {
     color: #d21034;
 }
 
-@media screen and (max-width: 768px) {
+footer {
+    margin: auto;
+    padding: 0;
+    background-color: #333333;
+    color: #eee;
+    text-align: center;
+}
+
+
+@media screen and (width <= 1024px) {
+    .container {
+        width: auto;
+    }
+
     #main-bio {
         flex-direction: column; 
+    }
+
+    #bio-image {
+        max-width: 400px;
+        width: auto;
+        margin: 20px;
     }
 
     #bio-content {
