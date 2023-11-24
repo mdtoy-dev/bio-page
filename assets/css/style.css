@@ -29,6 +29,7 @@ h2 {
 
 #main-bio {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #contact-info {
@@ -59,4 +60,15 @@ body, p {
 
 a {
     color: #d21034;
+}
+
+@media screen and (max-width: 768px) {
+    #main-bio {
+        flex-direction: column; 
+    }
+
+    #bio-content {
+        margin-right: 0; 
+    }
+    
 }
