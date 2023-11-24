@@ -1,2 +1,2 @@
 # bio-page
-bio page to showcase html, css, js skills
+bio page to showcase html, css skills
