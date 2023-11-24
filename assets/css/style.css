@@ -30,6 +30,7 @@ h2 {
 
 #main-bio {
     display: flex;
+    align-items: center;
 }
 
 #contact-info {
